@@ -245,5 +245,3 @@ def delete_wishlist(request, slug):
         Wishlist.objects.filter(slug=slug,  username=username).delete()
 
         return redirect('/wishlist')
-
-

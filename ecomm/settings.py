@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'rest_framework',
+    'django_filters',
+    'ckeditor'
 ]
 
 MIDDLEWARE = [
@@ -80,6 +83,22 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'OPTIONS': {
+#             'read_default_file': '/path/to/my.cnf',
+#         },
+#     }
+# }
+#
+#
+# # my.cnf
+# [client]
+# database = NAME
+# user = USER
+# password = PASSWORD
+# default-character-set = utf8
 
 
 # Password validation
